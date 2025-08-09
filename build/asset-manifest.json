@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fayaud-portfolio/static/css/main.9614910d.css",
+    "main.js": "/fayaud-portfolio/static/js/main.dc560427.js",
+    "index.html": "/fayaud-portfolio/index.html",
+    "main.9614910d.css.map": "/fayaud-portfolio/static/css/main.9614910d.css.map",
+    "main.dc560427.js.map": "/fayaud-portfolio/static/js/main.dc560427.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9614910d.css",
+    "static/js/main.dc560427.js"
+  ]
+}
