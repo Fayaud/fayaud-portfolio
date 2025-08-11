@@ -1,0 +1,213 @@
+/* Styles généraux */
+body {
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Profile picture */
+.profile-picture {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #333;
+}
+
+.welcome-message {
+  background-color: #e6f0ff;
+  border-left: 5px solid #007ACC;
+  padding: 15px 20px;
+  margin-top: 25px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  color: #004080;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+
+/* Conteneur principal */
+.app-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* En-tête */
+header h1 {
+  font-size: 2.5rem;
+  color: #007ACC;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+/* Navigation */
+nav {
+  position: sticky;
+  top: 0;
+  background: #004080;
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+  z-index: 1000;
+  border-bottom: 2px solid #007ACC;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover {
+  color: #aad4ff;
+  text-decoration: underline;
+}
+
+nav a.active {
+  border-bottom: 2px solid #007ACC;
+  padding-bottom: 2px;
+}
+
+/* Sections */
+section {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+section h2 {
+  color: #007ACC;
+  border-left: 5px solid #007ACC;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* Listes générales */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Card style for Teaching & Research */
+#teaching ul li,
+#research ul li {
+  background: #f9fafc;
+  border-left: 4px solid #007ACC;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  list-style: none;
+}
+
+/* Links in documents section if needed */
+section#documents a {
+  color: #007ACC;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+section#documents a:hover {
+  color: #005b99;
+}
+
+/* About Me Section */
+#about {
+  background-color: #f0f8ff; /* light blue background */
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 64, 128, 0.1);
+  margin-bottom: 40px;
+  color: #004080; /* dark blue text */
+}
+
+/* Flex container for about me content */
+#about .about-content {
+  display: flex;
+  align-items: center;       /* vertically center image and text */
+  gap: 30px;                 /* space between image and text */
+}
+
+/* Profile picture styling inside About */
+#about .profile-picture {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #333;
+  flex-shrink: 0;            /* keep image size fixed */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow */
+}
+
+/* About me text */
+#about p {
+  flex: 1;                   /* take remaining width */
+  font-size: 1.15rem;        /* slightly bigger font */
+  line-height: 1.6;
+  margin: 0;                 /* remove default margin */
+  color: #004080;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .app-container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  #about .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  #about .profile-picture {
+    width: 140px;
+    height: 140px;
+  }
+
+  #about p {
+    font-size: 1rem;
+  }
+}
