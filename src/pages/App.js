@@ -193,7 +193,7 @@ function App() {
       <li>
         Fayaud Mezatio Tsafack. <em>Towards Regularity of a Fractional Keller-Segel Model.</em>
          Master’s Thesis, AIMS-Rwanda, 2019.
-          <a href="https://library.nexteinstein.org/wpcontent/uploads/2023/03/AIMSRW_Fayaud_Mezatio.pdf"
+          <a href="https://library.nexteinstein.org/wp-content/uploads/2023/03/AIMSRW_Fayaud_Mezatio.pdf"
            target="_blank" rel="noreferrer">Available here</a>
       </li>
     </ul>
@@ -205,4 +205,5 @@ function App() {
 
 export default App;
 
+// Force deploy trigger
 
